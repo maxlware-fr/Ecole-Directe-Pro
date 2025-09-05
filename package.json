@@ -1,0 +1,39 @@
+{
+  "name": "ecole-directe-pro",
+  "version": "1.0.0",
+  "description": "Version personnalisée d'EcoleDirecte avec un disign refait.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Maxlware",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.maxlware.ecoledirectepro",
+    "productName": "Ecole Directe Pro",
+    "copyright": "Copyright © 2025 Maxlware",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "bento.css",
+      "splash.html",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
