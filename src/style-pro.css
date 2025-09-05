@@ -1,0 +1,138 @@
+        /* CSS 1.0.0 */
+        body, html {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif !important;
+            background: linear-gradient(135deg, rgba(240, 248, 255, 0.9), rgba(255, 255, 255, 0.95)) fixed !important;
+            backdrop-filter: blur(20px);
+            color: #2d3748 !important;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container:not(.session-expire) {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px !important;
+            min-height: 100vh;
+            gap: 30px;
+            background: transparent !important;
+        }
+
+        .login-container header {
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 24px;
+            padding: 24px 36px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            text-align: center;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .login-container header h1 {
+            font-size: 1.3rem !important;
+            color: #2d3748;
+            margin-top: 8px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+        }
+
+        .form-box {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 24px;
+            padding: 36px;
+            width: 100%;
+            max-width: 380px;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-box h2 {
+            margin-bottom: 18px;
+            text-align: center;
+            color: #4a5568;
+            font-weight: 500;
+            font-size: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .form-box input[type="text"],
+        .form-box input[type="password"] {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            background: rgba(255, 255, 255, 0.75);
+            transition: all 0.25s ease;
+            font-size: 0.95rem;
+            color: #2d3748;
+        }
+
+        .form-box input:focus {
+            border-color: rgba(66, 153, 225, 0.6);
+            outline: none;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+        }
+
+        .form-box button:not(#show-password):not(.btn-link),
+        .form-box input[type="submit"] {
+            padding: 14px 20px;
+            background-color: rgba(66, 153, 225, 0.85);
+            color: white;
+            border: none;
+            border-radius: 16px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            backdrop-filter: blur(10px);
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            margin: 2vh 0;
+        }
+
+        .form-box button:hover,
+        .form-box input[type="submit"]:hover {
+            background-color: rgba(49, 130, 206, 0.9);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.25);
+        }
+
+        @media screen and (max-width: 1280px) {
+            .login-container {
+                padding: 20px !important;
+            }
+
+            .form-box {
+                padding: 28px;
+                max-width: 320px;
+            }
+            
+            .login-container header {
+                padding: 20px 28px;
+                margin: 0 !important;
+            }
+        }
+
+        .cg-busy-backdrop {
+            background-color: rgba(255, 255, 255, 0.7) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .cg-busy-default-sign {
+            background: rgba(255, 255, 255, 0.8) !important;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .info-container {
+            background: linear-gradient(135deg, rgba(66, 153, 225, 0.9), rgba(49, 130, 206, 0.95)) !important;
+            backdrop-filter: blur(20px);
+        }
